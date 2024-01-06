@@ -1,0 +1,10 @@
+---
+- name: Install Apache Server
+  apt:
+   name: apache2
+   state: present
+
+- name: Install firewalld
+  apt:
+   name: firewalld
+   state: present

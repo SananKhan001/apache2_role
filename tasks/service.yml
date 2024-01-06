@@ -1,0 +1,8 @@
+---
+- name: Start Apache Server
+  service:
+   name: apache2.service
+   state: started
+
+- name: Starting webservice
+  shell: a2ensite 000-default.conf
